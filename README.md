@@ -9,6 +9,11 @@ These are color sets from the [Material Colors](https://material.io/tools/color/
 2. `color-imports.scss`: Import ONLY color files you choose from `/colors` **[RECOMMENDED]**
 3. `color-vars.scss`: ALL variables from every file within `/colors` is in this file.
 
+## Color Preview
+
+<img src="https://user-images.githubusercontent.com/145959/52465145-8c6ce880-2b4b-11e9-80a0-7e7e999c58b0.png">
+
+
 ---
 
 License MIT Open Source
