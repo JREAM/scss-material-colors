@@ -1,12 +1,53 @@
 /**
- * Curated by Jesse Boyer <https://jream.com>
+ * Material SCSS Colors
+ * _______________________________________________________________
  *
- * <NO> I do not recommend this way
+ * @author        Jesse Boyer     <https://github.com/jream>
+ * @contributors  Rhul            <https://github.com/arcteezy>
+ *                ..              <...>
+ * _______________________________________________________________
  *
- * @example 1: Jam Packed with every color.
+ * @help
+ * Althought Unused SCSS isn't saved to CSS, I still recommended
+ * Using: "Uncss" or "Purify CSS", both of which work work Webpack
+ * and other build tools.
+ *  - https://github.com/uncss/uncss
+ *  - https://github.com/purifycss/purifycss
+ *
+ * _______________________________________________________________
+ *
+ * COLOR INDEX
+ * _______________________________________________________________
+ *  - BLACK & WHITE
+ *  - RED
+ *  - PINK
+ *  - PURPLE
+ *  - DEEP PURPLE
+ *  - INDIGO
+ *  - BLUE
+ *  - LIGHT-BLUE
+ *  - CYAN
+ *  - TEAL
+ *  - GREEN
+ *  - LIGHT GREEN
+ *  - LIME
+ *  - YELLOW
+ *  - AMBER
+ *  - ORANGE
+ *  - DEEP-ORANGE
+ *  - BROWN
+ *  - GRAY
+ *  - BLUE-GRAY
+ * _______________________________________________________________
  */
 
+// BLACK & WHITE
+// _______________________________________________________________
+$black: #000;
+$white: #fff;
+
 // RED
+// _______________________________________________________________
 $red-50: #ffebee;
 $red-100: #ffcdd2;
 $red-200: #ef9a9a;
@@ -23,6 +64,7 @@ $red-A400: #ff1744;
 $red-A700: #d50000;
 
 // PINK
+// _______________________________________________________________
 $pink-50: #fce4ec;
 $pink-100: #f8bbd0;
 $pink-200: #f48fb1;
@@ -39,6 +81,7 @@ $pink-A400: #f50057;
 $pink-A700: #c51162;
 
 // PURPLE
+// _______________________________________________________________
 $purple-50: #f3e5f5;
 $purple-100: #e1bee7;
 $purple-200: #ce93d8;
@@ -55,6 +98,7 @@ $purple-A400: #d500f9;
 $purple-A700: #aa00ff;
 
 // DEEP PURPLE
+// _______________________________________________________________
 $deep-purple-50: #ede7f6;
 $deep-purple-100: #d1c4e9;
 $deep-purple-200: #b39ddb;
@@ -71,6 +115,7 @@ $deep-purple-A400: #651fff;
 $deep-purple-A700: #6200ea;
 
 // INDIGO
+// _______________________________________________________________
 $indigo-50: #e8eaf6;
 $indigo-100: #c5cae9;
 $indigo-200: #9fa8da;
@@ -87,6 +132,7 @@ $indigo-A400: #3d5afe;
 $indigo-A700: #304ffe;
 
 // BLUE
+// _______________________________________________________________
 $blue-50: #e3f2fd;
 $blue-100: #bbdefb;
 $blue-200: #90caf9;
@@ -103,6 +149,7 @@ $blue-A400: #2979ff;
 $blue-A700: #2962ff;
 
 // LIGHT-BLUE
+// _______________________________________________________________
 $light-blue-50: #e1f5fe;
 $light-blue-100: #b3e5fc;
 $light-blue-200: #81d4fa;
@@ -119,6 +166,7 @@ $light-blue-A400: #00b0ff;
 $light-blue-A700: #0091ea;
 
 // CYAN
+// _______________________________________________________________
 $cyan-50: #e0f7fa;
 $cyan-100: #b2ebf2;
 $cyan-200: #80deea;
@@ -135,6 +183,7 @@ $cyan-A400: #00e5ff;
 $cyan-A700: #00b8d4;
 
 // TEAL
+// _______________________________________________________________
 $teal-50: #e0f2f1;
 $teal-100: #b2dfdb;
 $teal-200: #80cbc4;
@@ -151,6 +200,7 @@ $teal-A400: #1de9b6;
 $teal-A700: #00bfa5;
 
 // GREEN
+// _______________________________________________________________
 $green-50: #e8f5e9;
 $green-100: #c8e6c9;
 $green-200: #a5d6a7;
@@ -167,6 +217,7 @@ $green-A400: #00e676;
 $green-A700: #00c853;
 
 // LIGHT GREEN
+// _______________________________________________________________
 $light-green-50: #f1f8e9;
 $light-green-100: #dcedc8;
 $light-green-200: #c5e1a5;
@@ -183,6 +234,7 @@ $light-green-A400: #76ff03;
 $light-green-A700: #64dd17;
 
 // LIME
+// _______________________________________________________________
 $lime-50: #f9fbe7;
 $lime-100: #f0f4c3;
 $lime-200: #e6ee9c;
@@ -199,6 +251,7 @@ $lime-A400: #c6ff00;
 $lime-A700: #aeea00;
 
 // YELLOW
+// _______________________________________________________________
 $yellow-50: #fffde7;
 $yellow-100: #fff9c4;
 $yellow-200: #fff59d;
@@ -215,6 +268,7 @@ $yellow-A400: #ffea00;
 $yellow-A700: #ffd600;
 
 // AMBER
+// _______________________________________________________________
 $amber-50: #fff8e1;
 $amber-100: #ffecb3;
 $amber-200: #ffe082;
@@ -231,6 +285,7 @@ $amber-A400: #ffc400;
 $amber-A700: #ffab00;
 
 // ORANGE
+// _______________________________________________________________
 $orange-50: #fff3e0;
 $orange-100: #ffe0b2;
 $orange-200: #ffcc80;
@@ -247,6 +302,7 @@ $orange-A400: #ff9100;
 $orange-A700: #ff6d00;
 
 // DEEP-ORANGE
+// _______________________________________________________________
 $deep-orange-50: #fbe9e7;
 $deep-orange-100: #ffccbc;
 $deep-orange-200: #ffab91;
@@ -263,6 +319,7 @@ $deep-orange-A400: #ff3d00;
 $deep-orange-A700: #dd2c00;
 
 // BROWN
+// _______________________________________________________________
 $brown-50: #efebe9;
 $brown-100: #d7ccc8;
 $brown-200: #bcaaa4;
@@ -275,6 +332,7 @@ $brown-800: #4e342e;
 $brown-900: #3e2723;
 
 // GRAY
+// _______________________________________________________________
 $gray-50: #fafafa;
 $gray-100: #f5f5f5;
 $gray-200: #eeeeee;
@@ -287,6 +345,7 @@ $gray-800: #424242;
 $gray-900: #212121;
 
 // BLUE-GRAY
+// _______________________________________________________________
 $blue-gray-50: #eceff1;
 $blue-gray-100: #cfd8dc;
 $blue-gray-200: #b0bec5;
@@ -297,7 +356,3 @@ $blue-gray-600: #546e7a;
 $blue-gray-700: #455a64;
 $blue-gray-800: #37474f;
 $blue-gray-900: #263238;
-
-// WHITE
-$white: #ffffff;
-$black: #000000;
