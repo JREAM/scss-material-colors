@@ -1,18 +1,90 @@
 # SCSS Material Colors
 
-## Usage
+Easily implement Material Colors in the color scheme of your choice.
 
-These are color sets from the [Material Colors](https://material.io/tools/color/#!/?view.left=0&view.right=0) as
-`#Hexadecimal`. The setup contains SCSS **3 methods of assorting your scheme**.
+<!-- TOC -->
 
-1. `color-import-all.scss`: Import ALL color files from the `/colors` folder
-2. `color-imports.scss`: Import ONLY color files you choose from `/colors` **[RECOMMENDED]**
-3. `color-vars.scss`: ALL variables from every file within `/colors` is in this file.
+- [SCSS Material Colors](#scss-material-colors)
+	- [Example Preview in VSCode](#example-preview-in-vscode)
+	- [Usage](#usage)
+		- [Option A &mdash; Single File, All Colors](#option-a-mdash-single-file-all-colors)
+		- [Option B &mdash; Using Separate Color Files](#option-b-mdash-using-separate-color-files)
+		- [Example: Include All Colors from Sub-Folder](#example-include-all-colors-from-sub-folder)
+		- [Example: Include Specific Colors from Sub-Folder](#example-include-specific-colors-from-sub-folder)
 
-## Color Preview
+<!-- /TOC -->
+
+---
+
+## Example Preview in VSCode
 
 <img src="https://user-images.githubusercontent.com/145959/52465145-8c6ce880-2b4b-11e9-80a0-7e7e999c58b0.png">
 
+## Usage
+
+These are color sets from the [Material Colors](https://material.io/tools/color/#!/?view.left=0&view.right=0) as
+in several variants (in the `_colors.*.scss` files), the default is **HEX**. This setup contains SCSS variables.
+
+### Option A &mdash; Single File, All Colors
+
+The easiest way to use this in scss is with one of the files beginning with `_colors`. The `_colors.scss` is the
+default. Yet, freely rename/customize and do as you see fit.
+
+- Copy a `_colors.*` file to your project, and simply `@import 'colors`;
+- **&mdash; or &mdash;**
+- If you use `_colors.hsla`, I suggest renaming it to `_colors.scss` for simplicity.
+- There is no reason to use `_colors, _colors.hsla, _colors.rgba` together, just choose your preference. They are all the same colors.
+- **File Differences; This should be obvious.**
+- `_colors.scss`:  **ALL colors** are variables in a
+  single file; Make sure your bundler omits unused code in this case (For example: `uncss`, mentioned below).
+  - `_colors.scss` &mdash; `HEX` **(default)**
+  - `_colors.rgba.scss` &mdash; `RGBA`
+  - `_colors.hslda.scss` &mdash; `HSLA`
+  - `$black` and `$white` are also provided even though they are not official part of Material.
+
+```scss
+// Assuming you have _colors.scss:
+@import 'colors';
+```
+
+
+### Option B &mdash; Using Separate Color Files
+
+You can choose to use only select colors to avoid more work on for your bundler by importing what you need.
+
+- Copy the `colors` folder to your project.
+- Copy a `_sample.*` file to your project, and make adjustments if needed.
+
+- `_sample.all.scss` &mdash; Import **ALL** color files from  `/colors`.
+- `_sample.choose.scss` &mdash; Import **ONLY** color files **you choose** from `/colors`.
+
+In your main `styles.scss` simply do an import:
+
+### Example: Include All Colors from Sub-Folder
+
+```scss
+// Assuming you have "colors/all.scss" and all files therein, you can add every subfile this way also:
+@import 'colors';
+
+body {
+  background: $red-50;
+  color: $gray-900;
+}
+```
+
+### Example: Include Specific Colors from Sub-Folder
+
+```scss
+// Assuming you have "colors/all.scss" and all files therein, you can add them by what you need only:
+@import 'colors/gray';
+@import 'colors/red';
+@import 'colors/solid'; // Black/White
+
+body {
+  background: $red-50;
+  color: $gray-900;
+}
+```
 
 ---
 
