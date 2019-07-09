@@ -3,16 +3,14 @@
 Easily implement Material Colors in the color scheme of your choice.
 
 <!-- TOC -->
-
-- [SCSS Material Colors](#scss-material-colors)
-	- [Example Preview in VSCode](#example-preview-in-vscode)
-	- [Usage](#usage)
-		- [Option A &mdash; Single File, All Colors](#option-a-mdash-single-file-all-colors)
-		- [Option B &mdash; Using Separate Color Files](#option-b-mdash-using-separate-color-files)
-		- [Example: Include All Colors from Sub-Folder](#example-include-all-colors-from-sub-folder)
-		- [Example: Include Specific Colors from Sub-Folder](#example-include-specific-colors-from-sub-folder)
-
-<!-- /TOC -->
+- [SCSS Material Colors](#SCSS-Material-Colors)
+  - [Example Preview in VSCode](#Example-Preview-in-VSCode)
+  - [Usage](#Usage)
+    - [Option A &mdash; Single File, All Colors](#Option-A-mdash-Single-File-All-Colors)
+    - [Option B &mdash; Using Separate Color Files](#Option-B-mdash-Using-Separate-Color-Files)
+    - [Example: Include All Colors from Sub-Folder](#Example-Include-All-Colors-from-Sub-Folder)
+    - [Example: Include Specific Colors from Sub-Folder](#Example-Include-Specific-Colors-from-Sub-Folder)
+    - [Option C &mdash; Plain CSS var](#Option-C-mdash-Plain-CSS-var)
 
 ---
 
@@ -46,7 +44,6 @@ default. Yet, freely rename/customize and do as you see fit.
 // Assuming you have _colors.scss:
 @import 'colors';
 ```
-
 
 ### Option B &mdash; Using Separate Color Files
 
@@ -83,6 +80,24 @@ body {
 body {
   background: $red-50;
   color: $gray-900;
+}
+```
+
+### Option C &mdash; Plain CSS var
+
+If you just want to use the colors in **pure-css** for some reason, included is also:
+
+- These are set in the global `:root` scope.
+  - `colors.css`
+  - `colors.min.css`
+
+To use **pure-css** Instead of using a SASS variable such as `$gray-500`, use:
+
+```css
+`element {
+  attribute: val(--gray-500);
+  # Or with an optional fall-back if it were not defined
+  # attribute: val(--gray-500, '#8e8e8e');
 }
 ```
 
